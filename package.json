@@ -1,0 +1,39 @@
+{
+  "name": "zbank",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node-dev --transpile-only src/server.ts",
+    "jtest": "jest --runInBand --forceExit",
+    "test": "NODE_ENV=test mocha -r ts-node/register **/*.test.ts --runInBand --forceExit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/code": "^9.0.3",
+    "@types/hapi": "^18.0.8",
+    "@types/mongoose": "^5.11.97",
+    "hapi": "^18.1.0",
+    "hapi-auto-route": "^3.0.4",
+    "jest": "^29.5.0",
+    "mongoose": "^7.3.0",
+    "ts-jest": "^29.1.0",
+    "ts-node-dev": "^2.0.0"
+  },
+  "devDependencies": {
+    "@hapi/lab": "^25.1.2",
+    "@types/chai": "^4.3.5",
+    "@types/glob": "^8.1.0",
+    "@types/jest": "^29.5.2",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^18.11.17",
+    "@types/supertest": "^2.0.12",
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0",
+    "supertest": "^6.3.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.3"
+  }
+}
